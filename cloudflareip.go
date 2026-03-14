@@ -7,7 +7,7 @@ import (
 )
 
 const (
-	xRealIP        = "X-Real-IP"
+	xRealIP        = "X-Forwarded-For"
 	cfConnectingIP = "Cf-Connecting-IP"
 )
 
