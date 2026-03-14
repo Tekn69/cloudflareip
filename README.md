@@ -5,7 +5,7 @@
 
 If Traefik is behind Cloudflare, it won't be able to get the real IP from the external client by checking the remote IP address.
 
-This plugin solves this issue by overwriting the X-Real-IP with an IP from the Cf-Connecting-IP header. The real IP will be the Cf-Connecting-IP if request is come from cloudflare ( truest ip in configuration file).
+This plugin solves this issue by overwriting the X-Forwarded-For with an IP from the Cf-Connecting-IP header. The real IP will be the Cf-Connecting-IP if request is come from cloudflare ( truest ip in configuration file).
 
 ## Configuration
 
